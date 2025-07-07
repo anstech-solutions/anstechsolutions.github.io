@@ -6,29 +6,36 @@
   <title>ANS Tech Solutions</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Roboto', sans-serif;
-      background: #f5f7fa;
-      color: #333;
+      background: #0e1a2b;
+      color: #f0f4f8;
       line-height: 1.6;
     }
     header {
-      background: #004aad;
+      background: #0d47a1;
       color: #fff;
-      padding: 1.5rem 2rem;
+      padding: 2rem 2rem 1.5rem;
       text-align: center;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
     header img {
       max-width: 120px;
       margin-bottom: 1rem;
+      filter: brightness(0) invert(1);
     }
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       opacity: 0.95;
     }
     section {
@@ -37,41 +44,53 @@
       padding: 0 2rem;
     }
     .section-title {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin-bottom: 1rem;
-      color: #004aad;
+      color: #64b5f6;
+      border-left: 4px solid #2196f3;
+      padding-left: 0.5rem;
     }
     ul {
       list-style: none;
       padding-left: 1rem;
     }
     ul li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.75rem;
       position: relative;
       padding-left: 1.2rem;
     }
     ul li::before {
-      content: '\2022';
-      color: #004aad;
-      font-weight: bold;
+      content: '\25A0';
+      color: #64b5f6;
       position: absolute;
       left: 0;
+      top: 0.2rem;
     }
     .contact a {
-      color: #004aad;
+      color: #64b5f6;
       text-decoration: none;
     }
+    .contact a:hover {
+      text-decoration: underline;
+    }
     footer {
-      background: #001e3c;
+      background: #102840;
       color: #ccc;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      margin-top: 3rem;
     }
     @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      header p { font-size: 1rem; }
-      .section-title { font-size: 1.5rem; }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .section-title {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
@@ -84,7 +103,7 @@
 
   <section class="announcement">
     <h2 class="section-title">We're Now Live!</h2>
-    <p>We specialize in <strong>custom software development</strong>, <strong>modernization of legacy systems</strong>, <strong>IT consultation</strong>, and <strong>cybersecurity solutions</strong>. Empower your business with cutting-edge technology tailored for your unique needs.</p>
+    <p>We specialize in <strong>custom software development</strong>, <strong>modernization of legacy systems</strong>, <strong>IT consultation</strong>, and <strong>cybersecurity solutions</strong>. Empower your business with cutting-edge technology tailored to your unique needs.</p>
   </section>
 
   <section class="services">
@@ -92,7 +111,7 @@
     <ul>
       <li>Custom Software Development</li>
       <li>Legacy Software Modernization</li>
-      <li>IT Consultation & Strategy</li>
+      <li>IT Consultation & Digital Strategy</li>
       <li>Cybersecurity & Data Protection</li>
       <li>Cloud Integration & Infrastructure</li>
     </ul>
