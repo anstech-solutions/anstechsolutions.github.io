@@ -69,27 +69,24 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: #3b82f6;
+            display: flex;
+            align-items: center;
             text-decoration: none;
-            position: relative;
-        }
-
-        .logo::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, #3b82f6, #1e40af);
-            transform: scaleX(0);
             transition: transform 0.3s ease;
         }
 
-        .logo:hover::after {
-            transform: scaleX(1);
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+            transition: filter 0.3s ease;
+        }
+
+        .logo:hover img {
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
         }
 
         .nav-links {
@@ -359,7 +356,9 @@
     
     <header>
         <nav>
-            <a href="#" class="logo">ANS Tech Solution</a>
+            <a href="#" class="logo">
+                <img src="logo.PNG" alt="ANS Tech Solution" />
+            </a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
