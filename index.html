@@ -2,10 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANS Tech Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #004aad;
+      color: #fff;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #004aad;
+    }
+    .services, .contact {
+      margin-top: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+    ul li::before {
+      content: '\2022';
+      color: #004aad;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+    footer {
+      background: #001e3c;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      header p { font-size: 1rem; }
+      .section-title { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to ANS Tech Solutions</h1>
-  <p>Crafting Tomorrow’s Tech, Today.</p>
+  <header>
+    <h1>ANS Tech Solutions</h1>
+    <p>Crafting Tomorrow's Tech, Today</p>
+  </header>
+
+  <section class="about">
+    <h2 class="section-title">About Us</h2>
+    <p>ANS Tech Solutions is a forward-thinking IT solution provider dedicated to delivering smart, scalable, and future-ready technologies to businesses of all sizes. From automation to cloud, we help enterprises innovate and transform.</p>
+  </section>
+
+  <section class="services">
+    <h2 class="section-title">Our Services</h2>
+    <ul>
+      <li>Custom Software Development</li>
+      <li>Cloud Integration & Infrastructure</li>
+      <li>IT Consultancy & Digital Strategy</li>
+      <li>Web & Mobile App Solutions</li>
+      <li>Data Analytics & Automation</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>📧 Email: <a href="mailto:connect@anstechsolutions.com">connect@anstechsolutions.com</a><br>
+       🌐 Website: <a href="https://www.anstechsolutions.com">www.anstechsolutions.com</a><br>
+       📍 Location: India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 ANS Tech Solutions. All rights reserved.
+  </footer>
 </body>
 </html>
