@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PPMS – Planned Preventive Maintenance System for manufacturing plants to reduce breakdowns, improve uptime and increase OEE.">
+
     <title>ANS Tech Solution - Cutting-Edge Technology Solutions</title>
     <style>
         * {
@@ -477,6 +479,71 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* PPMS Section */
+.ppms {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.ppms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+.ppms-content h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #3b82f6;
+}
+
+.ppms-content p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.ppms-features {
+    list-style: none;
+    padding: 0;
+}
+
+.ppms-features li {
+    color: #94a3b8;
+    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.ppms-features li::before {
+    content: '✔';
+    color: #3b82f6;
+    position: absolute;
+    left: 0;
+}
+
+.ppms-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.ppms-images img {
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid rgba(59,130,246,0.2);
+    box-shadow: 0 10px 30px rgba(59,130,246,0.15);
+    transition: transform 0.3s ease;
+}
+
+.ppms-images img:hover {
+    transform: scale(1.05);
+}
+
     </style>
 </head>
 <body>
@@ -491,6 +558,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#ppms">PPMS</a></li>
                 <li><a href="#solutions">Solutions</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -633,6 +701,46 @@
                 </div>
             </div>
         </div>
+        <section class="ppms" id="ppms">
+    <h2 class="section-title">PPMS – Planned Preventive Maintenance System</h2>
+
+    <div class="ppms-grid">
+        <div class="ppms-content">
+            <h3>From Reactive to Proactive Maintenance</h3>
+            <p>
+                Our PPMS is designed for manufacturing plants that want to reduce
+                unplanned breakdowns, improve machine availability, and standardize
+                maintenance practices across departments.
+            </p>
+
+            <p>
+                Built with real shop-floor experience, PPMS ensures maintenance is
+                planned, tracked, and continuously improved — not just recorded.
+            </p>
+
+            <ul class="ppms-features">
+                <li>Machine-wise preventive maintenance scheduling</li>
+                <li>Daily / Weekly / Monthly PM checklists</li>
+                <li>Breakdown logging & root cause analysis</li>
+                <li>Downtime tracking & OEE improvement</li>
+                <li>Role-based access (Maintenance / Production / Management)</li>
+                <li>Web-based & mobile-friendly interface</li>
+            </ul>
+
+            <a href="#contact" class="cta-button" style="margin-top:1.5rem;">
+                Request PPMS Demo
+            </a>
+        </div>
+
+        <div class="ppms-images">
+            <img src="assets/ppms/dashboard.png" alt="PPMS Dashboard">
+            <img src="assets/ppms/schedule.png" alt="Maintenance Schedule">
+            <img src="assets/ppms/checklist.png" alt="PM Checklist">
+            <img src="assets/ppms/analytics.png" alt="Breakdown Analytics">
+        </div>
+    </div>
+</section>
+
     </section>
 
     <footer>
